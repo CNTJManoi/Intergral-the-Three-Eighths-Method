@@ -1,0 +1,34 @@
+﻿<Window x:Class="calculateIntegral.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="О приложении" Height="480" Width="520" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Icon="Resources/math.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="331*"/>
+            <ColumnDefinition Width="186*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="2">
+            <TextBlock TextWrapping="Wrap" Margin="5" FontSize="16" TextAlignment="Justify">
+                <Run
+                    Text="Данная программа выполняет численное интегрирование определенного интеграла с помощью метода трех восьмых (Формула Ньютона)." />
+                <LineBreak /><Run Text="Разработал студент группы БИСТ-112 Коровченко А.Ю." /><LineBreak /><Run />
+                <LineBreak /><Run Text="Используемые формулы:" />
+            </TextBlock>
+            <Image Source="Resources/formula.png" />
+            <TextBlock TextWrapping="Wrap" FontSize="16" TextAlignment="Justify" Margin="5,0"><Run Text="Для вычисления погрешности используется 'Прав"/><Run Text="ило"/><Run Text=" Рунге'. Формула:"/></TextBlock>
+            <Image Source="Resources/errorRate.png" Margin="0,0,164,0" Stretch="UniformToFill" />
+            <TextBlock TextWrapping="Wrap" FontSize="16" TextAlignment="Justify" Margin="5,0">
+                <Run /><LineBreak />
+                <Run
+                    Text="Для распознавания формулы и вычисления значения при определенном значении х используется библиотека AngouriMath" />
+            </TextBlock>
+            <TextBlock Text="©Коровченко А.Ю. 2021" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                       Margin="0,5,5,5" />
+        </StackPanel>
+
+    </Grid>
+</Window>

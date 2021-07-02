@@ -1,0 +1,17 @@
+﻿<Window x:Class="calculateIntegral.InstrictionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Помощь" Height="394" Width="530" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Icon="Resources/math.ico" ShowInTaskbar="False">
+    <Grid>
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" Margin="5" FontSize="16" TextAlignment="Justify"><Run Text="Для начала необходимо задать формулу в соответствии с правилами предоставленными в правой части приложения. Далее следует указать границы интегрирования и точность (ε)."/><LineBreak/><LineBreak/><Run Text="После ввода значения результат записывается в поле &quot;Результат&quot; в нижней части приложения."/><Run Text=" "/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run Text="Для удобства, в случае поиска значения функции при очень "/><Run Text="долгих вычислениях"/><Run Text=", имеется поле, отмечающее этап выполнения программы. Также для такого случая имеется возможность прервать вычисление специальной кнопкой."/><LineBreak/><Run/><LineBreak/><LineBreak/><Run Text="Желаем удачи!"/></TextBlock>
+            <TextBlock Text="©Коровченко А.Ю. 2021" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                       Margin="0,5,5,5" />
+        </StackPanel>
+
+    </Grid>
+</Window>
